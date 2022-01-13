@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-['Fraunces'] bg-[#FFFCF8] w-full overflow-x-hidden overflow-y-auto flex flex-col justify-center">
+    <!-- HEADER START -->
+    <header
+      class="bg-[url('../images/mobile/image-header.jpg')] bg-cover bg-[center_center] bg-no-repeat w-full h-[538px] xl:bg-[url('../images/desktop/image-header.jpg')] xl:h-[800px]"
+    >
+    <!-- Mobile Navbar Start -->
+      <nav id="mobile-navbar"
+        class="mx-auto mt-0 mb-0 px-6 py-[32px] flex justify-between items-center w-full h-[32px] fixed left-0 top-0 right-0 z-10 transition-[background-color] duration-300 ease-in-out xl:hidden"
+      >
+        <a href="#">
+          <img src="../images/logo.svg" alt="sunnyside logo" />
+        </a>
+        <button id="menu-btn" class="w-6 h-[18px]" type="button">
+          <img  src="../images/icon-hamburger.svg" alt="" />
+        </button>
+        <ul id="mobile-nav" class="my-0 mx-auto px-[94px] py-[39px] flex flex-col items-center gap-8 bg-[#FFFCF8] w-[calc(100vw_*_0.85)] h-[305px] text-center fixed top-[106px]  right-[calc(100vw_*_0.07)]  z-[2] translate-x-[1000%] transition-transform  duration-300 ease-in-out  before:block before:w-0 before:h-0 before:border-solid before:border-t-[12px] before:border-t-transparent before:border-r-[12px] before:border-r-[#FFFCF8] before:border-b-[12px] before:border-b-[#FFFCF8] before:border-l-[12px] before:border-l-transparent before:absolute before:right-0 before:top-[-24px] xl:hidden" id="header-nav">
+          <li>
+              <a class="font-['Barlow'] font-semibold text-xl leading-[25px] tracking-[-0.14px] text-[#808397]"  href="#">About</a>
+          </li>
+          <li>
+              <a class="font-['Barlow'] font-semibold text-xl leading-[25px] tracking-[-0.14px] text-[#808397]"  href="#">Services</a>
+          </li>
+          <li class="mb-[13px]">
+              <a class="font-['Barlow'] font-semibold text-xl leading-[25px] tracking-[-0.14px] text-[#808397]" href="#">Projects</a>
+          </li>
+          <li>
+              <a class="py-[15.5px] px-[31px]  font-bold text-[15px] leading-[25px] tracking-[-0.11px] text-[#24303E] uppercase bg-[#FBD600] rounded-[28px]"  href="#">Contact</a>
+          </li>
+      </ul>
+      </nav>
+      <!-- Mobile Navbar End -->
+
+      <!-- Desktop Navbar Start -->
+      <nav id="desktop-navbar" class="mx-auto mt-0 mb-0 px-10 py-[48px] w-full h-[32px] fixed left-0 top-0 right-0 z-10 transition-[background-color,_padding] duration-300 ease-in-out hidden xl:flex xl:justify-between xl:items-center">
+          <a href="#">
+            <img src="../images/logo.svg" alt="sunnyside logo" />
+          </a>
+          <ul class="flex gap-[47px]">
+            <li><a class="font-['Barlow'] text-semibold text-lg leading-[25px] tracking-[-0.13px] text-white" href="#">About</a></li>
+            <li><a class="font-['Barlow'] text-semibold text-lg leading-[25px] tracking-[-0.13px] text-white" href="#">Services</a></li>
+            <li><a class="font-['Barlow'] text-semibold text-lg leading-[25px] tracking-[-0.13px] text-white" href="#">Projects</a></li>
+            <li><a class="bg-white px-[31px] py-[15.5px] rounded-[28px] font-bold text-lg leading-[25px] tracking-[-0.11px] text-[#24303E] uppercase active:bg-white/[25.37%] active:text-white" href="#">Contact</a></li>
+          
+          </ul>
+      </nav>
+      <!-- Desktop Navbar End -->
+      <div id="hero-heading mx-auto w-[327px] h-[98px]">
+        <h1
+          class="pt-[144px] text-center text-[40px] font-black leading-[49px] tracking-[6.25px] uppercase text-white relative 
+          after:block after:bg-[url('../images/icon-arrow-down.svg')] after:bg-no-repeat after:bg-[center_center] after:bg-contain after:absolute after:top-[100%] after:left-[47%] after:mt-[52px] after:w-[30px] after:h-[107.48px] 
+          xl:pt-[195px] xl:text-[56px] xl:leading-[69px] xl:tracking-[8.75px]
+          after:xl:left-[50%] after:xl:mt-[97px]"
+        >
+          We are creatives
+        </h1>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="flex flex-col w-full h-[2698px] xl:h-[1800px]">
+      <section class="xl:flex xl:flex-row-reverse xl:h-600">
+          <div
+            class="bg-[url('../images/mobile/image-transform.jpg')] bg-cover bg-[center_center] bg-no-repeat w-full h-[312px]
+            xl:bg-[url('../images/desktop/image-transform.jpg')] xl:h-[600px] xl:w-[50vw]"
+          ></div>
+          <div
+            class="py-16 px-6 flex flex-col text-center justify-center items-center
+            xl:pl-[11.45vw] xl:pr-[7.6vw] xl:py-[10.97vw] xl:justify-start xl:items-start xl:text-left xl:w-[50vw]"
+          >
+            <h2
+              class="mb-6 font-black text-[32px] leading-[39px] tracking-[-0.23px] text-[#24303E]
+              xl:mb-[32px] xl:text-[40px] xl:leading-[49px] xl:tracking-[-0.49px]"
+            >
+              Transform your <br class="hidden xl:inline"> brand
+            </h2>
+            <p
+              class="mb-[32px] font-['Barlow'] font-semibold text-[#808397] text-lg leading-[30px] tracking-[-0.13px] xl:w-[30.9vw] "
+            >
+              We are a full-service creative agency specializing in  helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a
+              href="#"
+              class="font-black text-center text-[#24303E] text-[15px] leading-[25px] tracking-[1px] uppercase relative after:bg-[#FAD400] after:block after:w-[137px] after:h-[10px] after:rounded-[28px] after:opacity-25 after:mt-[-10px] after:relative after:z-[-1] after:transition-[opacity_0.3s_ease-in-out] after:hover:opacity-100"
+              >Learn more</a
+            >
+          </div>
+      </section>
+
+      <section class="xl:flex xl:h-600">
+          <div
+            class="bg-[url('../images/mobile/image-stand-out.jpg')] bg-cover bg-no-repeat w-full h-[312px]
+            xl:bg-[url('../images/desktop/image-stand-out.jpg')] xl:h-[600px] xl:w-[50vw]"
+          ></div>
+          <div
+            class="py-16 px-6 flex flex-col text-center justify-center items-center
+            xl: xl:pl-[7.6vw] pr-[11.45vw] xl:py-[10.97vw] xl:justify-start xl:items-start xl:text-left xl:w-[50vw]"
+          >
+            <h2
+              class="mb-6 font-black text-[32px] leading-[39px] tracking-[-0.23px] text-[#24303E]"
+            >
+              Stand out to the right <br class="hidden xl:inline"> audience
+            </h2>
+            <p
+              class="mb-[32px] font-semibold text-[#808397] text-lg tracking-[-0.13px] leading-[30px] font-['Barlow']"
+            >
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a
+              href="#"
+              class="font-black text-center text-[#24303E] text-[15px] leading-[25px] tracking-[1px] uppercase relative after:bg-[#FE7766] after:block after:w-[137px] after:h-[10px] after:rounded-[28px] after:opacity-25 after:mt-[-10px] after:relative after:z-[-1] after:transition-[opacity_0.3s_ease-in-out] after:hover:opacity-100"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="xl:flex xl:h-600">
+        <div class="bg-[url('../images/mobile/image-graphic-design.jpg')] bg-contain bg-no-repeat w-full h-[600px] pt-[398px] px-6 pb-[59px] flex flex-col items-center
+        xl:bg-[url('../images/desktop/image-graphic-design.jpg')] xl:px-[13.26vw] xl:pt-[27.63vw] xl:pb-[4.09vw] xl:w-[50vw] ">
+          <h2 class="mb-[27px] font-black text-[#24554A] text-[28px] leading-[35px] tracking-[-0.2px]">Graphic Design</h2>
+          <p class="font-['Barlow'] text-center font-semibold text-[#24554A] text-base leading-[27px] tracking-[-0.11px] w-[339px]">Great design makes
+            you memorable. We deliver artwork that underscores your brand message and
+            captures potential clients’ attention.</p>
+        </div>
+        <div class="bg-[url('../images/mobile/image-photography.jpg')] bg-cover bg-no-repeat w-full h-[600px] pt-[398px] px-6 pb-[59px] flex flex-col items-center
+        xl:bg-[url('../images/desktop/image-photography.jpg')] xl:bg-contain xl:px-[13.26vw] xl:pt-[27.63vw] xl:pb-[4.09vw] xl:w-[50vw]">
+          <h2 class="mb-[27px] font-black text-[#052C3B] text-[28px] leading-[35px] tracking-[-0.2px]">Photography</h2>
+          <p class="font-['Barlow'] text-center font-semibold text-[#19536C] text-base leading-[27px] tracking-[-0.11px]">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- TESTIMONIALS START -->
+    <div id="testimonials" class="mx-auto px-6 pt-16 pb-[86px] w-full h-[1258px] text-center
+    xl:py-[11.11vw] xl:px-[11.45vw] xl:h-[777px]">
+      <h2 class="mb-16 text-center font-black text-[#A7AAAD] text-base leading-[20px] tracking-[4px] uppercase
+      xl:mb-[5.62vw]">Client Testimonials</h2>
+      <div class="grid gap-16 text-center justify-center
+      xl:grid-cols-3 xl:gap-[2.08vw]">
+        <div>
+          <div class="mb-[32px] w-[72px] h-[72px] mx-auto
+          xl:mb-[4.02vw]">
+            <img class="rounded-full w-[72px] h-[72px]" src="../images/image-emily.jpg" alt="Image of Emily">
+          </div>
+          <blockquote class="mb-[32px] font-['Barlow'] font-semibold text-lg leading-[32px] tracking-[-0.13px] text-[#5B636D]
+          xl:mb-[4.79vw]">
+            We put our trust in Sunnyside and they delivered,
+            making sure our needs were met and deadlines were always hit.
+          </blockquote>
+          <p class="mb-[0.625vw] font-black text-lg leading-[22px] tracking-[-0.13px] text-[#24303E]">Emily R.</p>
+          <p class="font-['Barlow'] font-semibold text-[14px] leading-[25px] tracking-[-0.1px] text-[#A7AAAD]">Marketing Director</p>
+        </div>
+        <div>
+          <div class="mb-[32px] w-[72px] h-[72px] mx-auto
+          xl:mb-[4.02vw]">
+            <img class="rounded-full w-[72px] h-[72px]" src="../images/image-thomas.jpg" alt="Image of Thomas">
+          </div>
+          <blockquote class="mb-[32px] font-['Barlow'] font-semibold text-lg leading-[32px] tracking-[-0.13px] text-[#5B636D]
+          xl:mb-[4.79vw]">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </blockquote>
+          <p class="mb-[0.625vw] font-black text-lg leading-[22px] tracking-[-0.13px] text-[#24303E]">Thomas S.</p>
+          <p class="font-['Barlow'] font-semibold text-[14px] leading-[25px] tracking-[-0.1px] text-[#A7AAAD]">Chief Operating Officer</p>
+        </div>
+        <div>
+          <div class="mb-[32px] w-[72px] h-[72px] mx-auto
+          xl:mb-[4.02vw]">
+            <img class="rounded-full w-[72px] h-[72px]" src="../images/image-jennie.jpg" alt="Image of Jennie">
+          </div>
+          <blockquote class="mb-[32px] font-['Barlow'] font-semibold text-lg leading-[32px] tracking-[-0.13px] text-[#5B636D]
+          xl:mb-[4.79vw]">
+            Incredible end result! Our sales increased over
+    400% when we worked with Sunnyside. Highly recommended!
+          </blockquote>
+          <p class="mb-[0.625vw] font-black text-lg leading-[22px] tracking-[-0.13px] text-[#24303E]">Jennie F.</p>
+          <p class="font-['Barlow'] font-semibold text-[14px] leading-[25px] tracking-[-0.1px] text-[#A7AAAD]">Business Owner</p>
+        </div>
+      </div>
+    </div>
+   <!-- TESTIMONIALS END -->
+
+   <!-- GALLERY START -->
+   <div id="gallery" class="grid grid-cols-2
+   xl:grid-cols-4">
+    <div>
+      <img class="object-cover w-full h-[188px] block xl:hidden" src="../images/mobile/image-gallery-milkbottles.jpg" alt="">
+      <img class="object-cover w-full h-[447px] hidden xl:block" src="../images/desktop/image-gallery-milkbottles.jpg" alt="">
+    </div>
+    <div>
+      <img class="object-cover w-full h-[188px] block xl:hidden" src="../images/mobile/image-gallery-orange.jpg" alt="">
+      <img class="object-cover w-full h-[447px] hidden xl:block" src="../images/desktop/image-gallery-orange.jpg" alt="">
+
+    </div>
+    <div>
+      <img class="object-cover w-full h-[188px] block xl:hidden" src="../images/mobile/image-gallery-cone.jpg" alt="">
+      <img class="object-cover w-full h-[447px] hidden xl:block" src="../images/desktop/image-gallery-cone.jpg" alt="">
+    </div>
+    <div>
+      <img class="object-cover w-full h-[188px] block xl:hidden" src="../images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      <img class="object-cover w-full h-[447px] hidden xl:block" src="../images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </div>
+   </div>
+   <!-- GALLERY END -->
+
+   <!-- FOOTER START -->
+   <footer class="w-full h-[350px] bg-[#90D4C6] px-[39px] pt-16 pb-20 flex flex-col items-center
+   xl:px-[39.58vw] xl:py-[5vw]">
+    <div class="mb-10">
+      <img src="../images/footer-logo.svg" alt="">
+    </div>
+    <nav class="mb-[88px] flex justify-between w-full">
+      <a class="font-['Barlow'] font-semibold text-lg leading-[25px] tracking-[-0.13] text-[#458D7E] hover:text-white active:text-white" href="#">About</a>
+      <a class="font-['Barlow'] font-semibold text-lg leading-[25px] tracking-[-0.13] text-[#458D7E] hover:text-white active:text-white" href="#">Services</a>
+      <a class="font-['Barlow'] font-semibold text-lg leading-[25px] tracking-[-0.13] text-[#458D7E] hover:text-white active:text-white" href="#">Projects</a>
+    </nav>
+    <div id="socials" class="flex justify-between items-center w-[164px]">
+      <a  href="#">
+        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path class="hover:fill-white active:fill-white"  d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" fill="#2C7566" fill-rule="nonzero"/>
+        </svg>
+      <!-- </a> -->
+      <a href="#">
+        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path class="hover:fill-white active:fill-white" d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" fill="#2C7566" fill-rule="nonzero"/>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="20" height="17" xmlns="http://www.w3.org/2000/svg">
+          <path class="hover:fill-white active:fill-white" d="M20 2.172a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.805-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0013.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 011.392 1a4.109 4.109 0 001.27 5.478 4.086 4.086 0 01-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.833 2.849A8.25 8.25 0 010 14.658a11.616 11.616 0 006.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0020 2.172z" fill="#2C7566" fill-rule="nonzero"/>
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path class="hover:fill-white active:fill-white" d="M10 0C4.477 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.176-4.068-2.845 0-4.516 2.135-4.516 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S15.523 0 10 0z" fill="#2C7566" fill-rule="nonzero"/>
+        </svg>
+      </a>
+    </div>
+
+   </footer>
+   <!-- FOOTER END -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
